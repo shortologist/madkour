@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['madkour.herokuapp.com/', 'localhost']
 
@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'dist/static'),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
